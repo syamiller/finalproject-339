@@ -112,7 +112,7 @@ header nav {
     text-decoration: none;
 }
 
-.big-name p {
+.big-name h2 {
     color: white;
     font-size: 30px;
     text-align: center;
@@ -218,7 +218,7 @@ header nav {
         align-items: center;
     }
 
-    .home-gallery {
+    .home-gallery ul {
         flex-flow: row wrap;
     }
 
