@@ -143,6 +143,7 @@ header nav {
     grid-template-columns: 1fr 1fr;
     row-gap: 10px;
     overflow: auto;
+    place-items: center;
 }
 
 .fun-container {
