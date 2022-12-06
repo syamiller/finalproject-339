@@ -124,7 +124,7 @@ header nav {
     padding-left: 50px;
 }
 
-.home-gallery {
+.home-gallery ul{
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -264,15 +264,19 @@ header nav {
     .nav-bar {
         flex-direction: row;
         justify-content: flex-start;
-        align-items: stretch;
     }
 
     .nav-link {
         margin-left: 30px;
     }
 
-    .home-gallery {
-        flex-flow: row-reverse wrap;
+    .home-gallery ul{
+        flex-flow: row wrap;
+    }
+
+    .home-gallery ul li{
+        height: 40vh;
+        flex-grow: 1;
     }
 
     .fun-gallery {
@@ -291,12 +295,12 @@ header nav {
 
 @media screen and (prefers-reduced-motion: reduce){
     html{
-        scroll-behavior: auto; /* Removes scroll animation */
+        scroll-behavior: auto; 
     }
 
     .skip a{
-        -webkit-transition: none; /* sets to default setting */
-        transition: none;        /* sets to default setting */
+        -webkit-transition: none; 
+        transition: none;        
        }
 
     .big-name {
@@ -306,4 +310,9 @@ header nav {
     .funover {
         transition: unset;
     }
+
+    .home-gallery ul li {
+        flex-grow: 10;
+    }
+
 }
